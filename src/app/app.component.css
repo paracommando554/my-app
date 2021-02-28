@@ -1,13 +1,23 @@
-.video{
-    text-align: left;
+
+
+ 
+.column {
+  float: right;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
-.avd{
-    text-align: right;
+
+.left {
+  width: 75%;
 }
-.contain {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    /* margin-right: auto; */
-    /* margin-left: auto;*/
+
+.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
